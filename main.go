@@ -30,8 +30,6 @@ var (
 	confFlag    string
 )
 
-// workflow run
-
 func main() {
 
 	flag.BoolVar(&versionFlag, "version", false, "See version info")

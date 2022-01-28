@@ -3,7 +3,6 @@ linters:
   disable-all: true
   enable:
     - deadcode
-    - errcheck
     - gosimple
     - govet
     - ineffassign
@@ -16,12 +15,10 @@ linters:
     - exhaustive
     - exportloopref
     - gocritic
-    - goerr113
     - gofmt
     - goimports
     - revive
     - goprintffuncname
-    - lll
     - misspell
     - nolintlint
     - prealloc
