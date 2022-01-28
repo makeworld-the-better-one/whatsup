@@ -9,5 +9,5 @@ After=webserver.service
 WantedBy=webserver.service
 
 [Service]
-ExecStart=/usr/local/bin/neartalk
+ExecStart=/usr/local/bin/whatsup
 Restart=always
