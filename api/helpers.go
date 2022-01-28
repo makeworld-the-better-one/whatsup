@@ -89,16 +89,16 @@ func checkAuth(username string, w http.ResponseWriter, r *http.Request) bool {
 // Order is not preserved.
 // This is unused right now, but could be used to prevent returning duplicate
 // usernames if the client requests it (which is invalid).
-func dedupStringSlice(ss []string) []string {
-	// http://rosettacode.org/wiki/Remove_duplicate_elements#Go
+// func dedupStringSlice(ss []string) []string {
+// 	// http://rosettacode.org/wiki/Remove_duplicate_elements#Go
 
-	unique := make(map[string]bool, len(ss))
-	for _, s := range ss {
-		unique[s] = true
-	}
-	result := make([]string, 0, len(unique))
-	for s := range unique {
-		result = append(result, s)
-	}
-	return result
-}
+// 	unique := make(map[string]bool, len(ss))
+// 	for _, s := range ss {
+// 		unique[s] = true
+// 	}
+// 	result := make([]string, 0, len(unique))
+// 	for s := range unique {
+// 		result = append(result, s)
+// 	}
+// 	return result
+// }
