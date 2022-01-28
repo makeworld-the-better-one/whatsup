@@ -1,0 +1,13 @@
+# This is an example systemd service file for deploying whatsup
+# "webserver" is the web server you are using for reverse proxying.
+
+[Unit]
+Description=whatsup fmrl serveer
+After=webserver.service
+
+[Install]
+WantedBy=webserver.service
+
+[Service]
+ExecStart=/usr/local/bin/neartalk
+Restart=always

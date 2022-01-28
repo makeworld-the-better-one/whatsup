@@ -1,0 +1,35 @@
+# This is an example config file for whatsup.
+# You can copy this into /etc/whatsup/config.toml, and fill out the required fields.
+
+[server]
+
+# IP address for hosting
+# Examples: 127.0.0.1, 0.0.0.0, ::1
+host = "127.0.0.1"
+
+# Set to port 443 if not reverse-proxying (or 80 if not doing TLS)
+port = 1234
+
+# Leave unset if reverse-proxying
+# Otherwise provide path to your TLS cert and key
+#cert = '/path/to/cert.pem'
+#key = '/path/to/key.pem'
+
+[data]
+
+# Main data dir where statuses and anything else is stored
+# Will be created if it doesn't exist
+dir = "/usr/share/whatsup"
+
+
+[users]
+
+# Set usernames equal to password hash
+# Get the password hash by running: whatsup hash
+# and then entering the password
+#
+# Note that usernames have a max of 40 characters
+# And that usernames can only use the following characters:
+# abcdefghijklmnopqrstuvqxyz0123456789_.
+
+#myusername = "$argon2id$v=19$m=65536,t=1,p=4$WXJGqwIB2qd+pRmxMOw9Dg$X4gvR0ZB2DtQoN8vOnJPR2SeFdUhH9TyVzfV98sfWeE"
