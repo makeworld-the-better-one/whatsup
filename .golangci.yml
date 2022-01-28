@@ -37,3 +37,7 @@ linters-settings:
   goconst:
     # minimal length of string constant, 3 by default
     min-len: 5
+  revive:
+    rules:
+      - name: blank-imports
+        disabled: true
