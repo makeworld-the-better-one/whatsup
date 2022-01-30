@@ -1,6 +1,7 @@
 whatsup
 config.toml
 tmp
+NOTES.md
 
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux,go
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,linux,go

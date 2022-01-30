@@ -49,7 +49,7 @@ func getFollowing(w http.ResponseWriter, r *http.Request) {
 		ifModTime, _ = http.ParseTime(ifm[0])
 	}
 
-	if updatedAt.Before(ifModTime) {
+	if updatedAt.Before(ifModTime) || updatedAt.Equal(ifModTime) {
 		// No new updates
 		w.WriteHeader(http.StatusNotModified)
 		return
