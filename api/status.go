@@ -72,7 +72,7 @@ func statusQuery(w http.ResponseWriter, r *http.Request) {
 				log.Printf("GetUser(%s): %v", username, err)
 				user.Code = http.StatusInternalServerError
 				user.Msg = http.StatusText(http.StatusInternalServerError)
-			} else if status.UpdatedAt.Before(ifModTime) || status.UpdatedAt.Equal(ifModTime) {
+			} else if status.UpdatedAt.Before(ifModTime) || status.UpdatedAt.Truncate(time.Second).Equal(ifModTime) {
 				// Status is already known
 				user.Code = 304
 			} else {
