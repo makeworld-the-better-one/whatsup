@@ -8,7 +8,7 @@ whatsup supports v0.1.1 of the fmrl spec.
 
 ## Install
 
-whatsup targets *nix systems, but should work fine on all OSes. You can download binaries from the releases page, or compile from source.
+whatsup targets *nix systems, and is not supported on Windows. You can download binaries from the releases page, or compile from source.
 
 ### From source
 
