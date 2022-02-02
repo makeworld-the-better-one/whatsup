@@ -67,7 +67,7 @@ type setFollowingJSON struct {
 	Remove []string `json:"remove"`
 }
 
-var followingUsernameRE = regexp.MustCompile(`^@[a-z0-9_\.]{1,40}@[\w\.]+$`)
+var followingUsernameRE = regexp.MustCompile(`^@[a-z0-9_\.]{1,40}@[\w\.-]+$`)
 
 func setFollowing(w http.ResponseWriter, r *http.Request) {
 	// Limit client JSON to 1 MiB, more than enough
